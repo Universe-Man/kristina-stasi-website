@@ -531,7 +531,7 @@ function ConnectPage() {
         {/* Social links */}
         <div style={{ display: "flex", gap: 24, marginBottom: 56, flexWrap: "wrap" }}>
           <a href="https://www.facebook.com/kristina.stasi" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Facebook</a>
-          <a href="https://twitter.com/stinatweet" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Twitter / X</a>
+          <a href="https://www.instagram.com/stasi.kristina/" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Instagram</a>
         </div>
 
         <div style={{ width: "100%", height: 1, background: "rgba(201,168,255,0.15)", marginBottom: 48 }} />
