@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+ import { useState, useEffect } from "react";
 
 const NAV_LINKS = ["About", "Sound Healing", "Shows", "Connect"];
 
@@ -307,7 +307,7 @@ function AboutPage() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, marginBottom: 60 }} className="about-grid">
           <div>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.8)", marginBottom: 24 }}>
-              Kristina Stasi is a performer and creative originally from the San Francisco Bay Area, now making her mark on New York City's comedy and theater scene.
+              Kristina Stasi is a performer and creative originally from the San Francisco Bay Area, now making her mark on Los Angeles' comedy and theater scene.
             </p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.8)", marginBottom: 24 }}>
               She can be seen performing with her Magnet house sketch team <a href="https://www.facebook.com/NewportSketch/" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>Newport</a>, indie all-female hip-hop improv team <a href="https://www.instagram.com/dmxximprov/" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>DMXX</a>, and indie musical improv team <a href="https://www.facebook.com/29thStRevue" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>The 29th Street Revue</a>.
@@ -329,7 +329,7 @@ function AboutPage() {
             }}>
               {[
                 { label: "Performer", desc: "Sketch · Improv · Musical" },
-                { label: "Comedian", desc: "NYC-based standup & sketch" },
+                { label: "Comedian", desc: "LA-based improv & sketch" },
                 { label: "Sound Healer", desc: "Transformative sonic experiences" },
                 { label: "Writer", desc: "Creative writing & pun enthusiast" },
               ].map(({ label, desc }) => (
@@ -341,28 +341,6 @@ function AboutPage() {
             </div>
           </div>
         </div>
-
-        <a
-          href="https://kristinastasi.vpweb.com/upload/Kristina.Stasi.resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            display: "inline-block",
-            fontFamily: "'Raleway', sans-serif",
-            fontSize: 12,
-            fontWeight: 700,
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            padding: "14px 36px",
-            background: "transparent",
-            color: "#c9a8ff",
-            border: "1px solid rgba(201,168,255,0.5)",
-            textDecoration: "none",
-            transition: "border-color 0.2s",
-          }}
-        >
-          View Full Résumé →
-        </a>
       </div>
     </div>
   );
@@ -486,19 +464,6 @@ function ShowsPage() {
               </div>
             </a>
           ))}
-        </div>
-
-        <div style={{
-          background: "rgba(168,255,201,0.05)",
-          border: "1px solid rgba(168,255,201,0.15)",
-          padding: 32,
-        }}>
-          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 13, color: "rgba(240,232,255,0.6)", marginBottom: 8, letterSpacing: "0.1em", textTransform: "uppercase" }}>
-            Stay Updated
-          </p>
-          <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, color: "rgba(240,232,255,0.8)", lineHeight: 1.7 }}>
-            Follow Kristina on <a href="https://www.facebook.com/kristina.stasi" target="_blank" rel="noreferrer" style={{ color: "#a8ffc9", textDecoration: "none" }}>Facebook</a> and <a href="https://twitter.com/stinatweet" target="_blank" rel="noreferrer" style={{ color: "#a8ffc9", textDecoration: "none" }}>Twitter / X</a> for the most up-to-date show announcements.
-          </p>
         </div>
       </div>
     </div>
