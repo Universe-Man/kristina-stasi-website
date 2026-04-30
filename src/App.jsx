@@ -274,7 +274,7 @@ function Hero({ setPage }) {
       </div>
 
       {/* Scroll indicator */}
-      <div style={{
+      {/* <div style={{
         position: "absolute",
         bottom: 40,
         left: "50%",
@@ -287,7 +287,7 @@ function Hero({ setPage }) {
       }}>
         <span style={{ fontFamily: "'Raleway', sans-serif", fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "rgba(201,168,255,0.5)" }}>Scroll</span>
         <div style={{ width: 1, height: 40, background: "linear-gradient(to bottom, rgba(201,168,255,0.5), transparent)" }} />
-      </div>
+      </div> */}
     </section>
   );
 }
@@ -308,9 +308,6 @@ function AboutPage() {
           <div>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.8)", marginBottom: 24 }}>
               Kristina Stasi is a performer and creative originally from the San Francisco Bay Area, now making her mark on Los Angeles' comedy and theater scene.
-            </p>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.8)", marginBottom: 24 }}>
-              She can be seen performing with her Magnet house sketch team <a href="https://www.facebook.com/NewportSketch/" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>Newport</a>, indie all-female hip-hop improv team <a href="https://www.instagram.com/dmxximprov/" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>DMXX</a>, and indie musical improv team <a href="https://www.facebook.com/29thStRevue" target="_blank" rel="noreferrer" style={{ color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.4)" }}>The 29th Street Revue</a>.
             </p>
             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.8)" }}>
               Her hobbies include karaoke, watching RuPaul's Drag Race, and making her own greeting cards. Her five-year plan involves rescuing hundreds of dogs and teaching them to read, write, and speak.
@@ -397,27 +394,34 @@ function SoundHealingPage() {
 
 function ShowsPage() {
   const shows = [
-    {
-      team: "Newport",
-      type: "Sketch Comedy",
-      venue: "Magnet Theater",
-      description: "Kristina's Magnet house sketch team. Smart, surprising, and always delightful.",
-      link: "https://magnettheater.com/ensembles/newport/",
-    },
-    {
-      team: "DMXX",
-      type: "Hip-Hop Improv",
-      venue: "PIT Underground",
-      description: "An indie all-female hip-hop improv team bringing beats and brilliance to the stage.",
-      link: "https://thepit-nyc.com/events/dmxx/",
-    },
-    {
-      team: "The 29th Street Revue",
-      type: "Musical Improv",
-      venue: "Various NYC Venues",
-      description: "A beloved indie musical improv team with spontaneous songs and stories.",
-      link: "https://www.facebook.com/29thStRevue",
-    },
+   // {
+   //   team: "Newport",
+   //   type: "Sketch Comedy",
+   //   venue: "Magnet Theater",
+   //   description: "Kristina's Magnet house sketch team. Smart, surprising, and always delightful.",
+   //   link: "https://magnettheater.com/ensembles/newport/",
+   // },
+   // {
+   //   team: "DMXX",
+   //   type: "Hip-Hop Improv",
+   //   venue: "PIT Underground",
+   //   description: "An indie all-female hip-hop improv team bringing beats and brilliance to the stage.",
+   //   link: "https://thepit-nyc.com/events/dmxx/",
+   // },
+   // {
+   //   team: "The 29th Street Revue",
+   //   type: "Musical Improv",
+   //   venue: "Various NYC Venues",
+   //   description: "A beloved indie musical improv team with spontaneous songs and stories.",
+   //   link: "https://www.facebook.com/29thStRevue",
+   // },
+   {
+     team: "Music Takes Flight",
+     type: "Village Voices Chorale",
+     venue: "Bank of America Performing Arts Center",
+     description: "Sing Sing Sing",
+     link: null,
+   },
   ];
 
   return (
