@@ -419,7 +419,7 @@ function ShowsPage() {
      team: "Music Takes Flight",
      type: "Village Voices Chorale",
      venue: "Bank of America Performing Arts Center",
-     description: "Sing Sing Sing",
+     description: "Friday May 29th @ 7:30pm | Saturday May 30th @ 2:30pm",
      link: "/images/music-takes-flight-2026-flyer.jpg",
    },
   ];
@@ -435,7 +435,7 @@ function ShowsPage() {
           <span style={{ fontStyle: "italic", color: "#a8ffc9" }}> if you can.</span>
         </h2>
         <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 15, color: "rgba(240,232,255,0.6)", marginBottom: 60, maxWidth: 500, lineHeight: 1.7 }}>
-          Kristina performs regularly with three NYC-based comedy and improv teams. Check each group's social pages for the latest show dates.
+          Kristina will next be performing with her choir Village Voices Chorale later this month!
         </p>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 2, marginBottom: 60 }}>
