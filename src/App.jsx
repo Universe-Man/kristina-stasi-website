@@ -1,6 +1,6 @@
  import { useState, useEffect } from "react";
 
-const NAV_LINKS = ["About", "Sound Healing", "Shows", "Connect"];
+const NAV_LINKS = ["About", "Sound Healing", "Shows"];//, "Connect"];
 
 function useScrollY() {
   const [y, setY] = useState(0);
@@ -384,9 +384,9 @@ function SoundHealingPage() {
           </p>
         </div>
 
-        <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.7)", marginBottom: 32 }}>
+        {/* <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, lineHeight: 1.8, color: "rgba(240,232,255,0.7)", marginBottom: 32 }}>
           Kristina offers private sessions, group sound baths, and workshop experiences. To inquire about booking, please use the Connect page.
-        </p>
+        </p> */}
       </div>
     </div>
   );
@@ -474,127 +474,127 @@ function ShowsPage() {
   );
 }
 
-function ConnectPage() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
+// function ConnectPage() {
+//   const [form, setForm] = useState({ name: "", email: "", message: "" });
+//   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // In production, wire this to a form service like Formspree
-    setSubmitted(true);
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // In production, wire this to a form service like Formspree
+//     setSubmitted(true);
+//   };
 
-  return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #1a1228 0%, #231636 100%)", paddingTop: 120 }}>
-      <div style={{ maxWidth: 700, margin: "0 auto", padding: "60px 32px" }}>
-        <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.4em", textTransform: "uppercase", color: "#c9a8ff", marginBottom: 16 }}>
-          Connect
-        </p>
-        <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(40px, 6vw, 72px)", fontWeight: 700, color: "#f0e8ff", lineHeight: 1.1, marginBottom: 16 }}>
-          Say hello.
-        </h2>
-        <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, color: "rgba(240,232,255,0.65)", marginBottom: 48, lineHeight: 1.7 }}>
-          Bookings, collaborations, or just want to chat about dogs and drag? Reach out below.
-        </p>
+//   return (
+//     <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #1a1228 0%, #231636 100%)", paddingTop: 120 }}>
+//       <div style={{ maxWidth: 700, margin: "0 auto", padding: "60px 32px" }}>
+//         <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.4em", textTransform: "uppercase", color: "#c9a8ff", marginBottom: 16 }}>
+//           Connect
+//         </p>
+//         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(40px, 6vw, 72px)", fontWeight: 700, color: "#f0e8ff", lineHeight: 1.1, marginBottom: 16 }}>
+//           Say hello.
+//         </h2>
+//         <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 16, color: "rgba(240,232,255,0.65)", marginBottom: 48, lineHeight: 1.7 }}>
+//           Bookings, collaborations, or just want to chat about dogs and drag? Reach out below.
+//         </p>
 
-        {/* Social links */}
-        <div style={{ display: "flex", gap: 24, marginBottom: 56, flexWrap: "wrap" }}>
-          <a href="https://www.facebook.com/kristina.stasi" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Facebook</a>
-          <a href="https://www.instagram.com/stasi.kristina/" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Instagram</a>
-        </div>
+//         {/* Social links */}
+//         <div style={{ display: "flex", gap: 24, marginBottom: 56, flexWrap: "wrap" }}>
+//           <a href="https://www.facebook.com/kristina.stasi" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Facebook</a>
+//           <a href="https://www.instagram.com/stasi.kristina/" target="_blank" rel="noreferrer" style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#c9a8ff", textDecoration: "none", borderBottom: "1px solid rgba(201,168,255,0.3)", paddingBottom: 2 }}>Instagram</a>
+//         </div>
 
-        <div style={{ width: "100%", height: 1, background: "rgba(201,168,255,0.15)", marginBottom: 48 }} />
+//         <div style={{ width: "100%", height: 1, background: "rgba(201,168,255,0.15)", marginBottom: 48 }} />
 
-        {submitted ? (
-          <div style={{
-            background: "rgba(201,168,255,0.08)",
-            border: "1px solid rgba(201,168,255,0.3)",
-            padding: 40,
-            textAlign: "center",
-          }}>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, color: "#f0e8ff", fontStyle: "italic", marginBottom: 12 }}>Message sent!</p>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 14, color: "rgba(240,232,255,0.6)" }}>Kristina will be in touch soon.</p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-            {[
-              { name: "name", label: "Name", type: "text" },
-              { name: "email", label: "Email", type: "email" },
-            ].map(({ name, label, type }) => (
-              <div key={name} style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                <label style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(240,232,255,0.5)" }}>{label}</label>
-                <input
-                  type={type}
-                  required
-                  value={form[name]}
-                  onChange={e => setForm({ ...form, [name]: e.target.value })}
-                  style={{
-                    background: "rgba(201,168,255,0.06)",
-                    border: "1px solid rgba(201,168,255,0.2)",
-                    padding: "14px 16px",
-                    color: "#f0e8ff",
-                    fontFamily: "'Raleway', sans-serif",
-                    fontSize: 15,
-                    outline: "none",
-                    transition: "border-color 0.2s",
-                  }}
-                  onFocus={e => e.target.style.borderColor = "rgba(201,168,255,0.6)"}
-                  onBlur={e => e.target.style.borderColor = "rgba(201,168,255,0.2)"}
-                />
-              </div>
-            ))}
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              <label style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(240,232,255,0.5)" }}>Message</label>
-              <textarea
-                required
-                rows={6}
-                value={form.message}
-                onChange={e => setForm({ ...form, message: e.target.value })}
-                style={{
-                  background: "rgba(201,168,255,0.06)",
-                  border: "1px solid rgba(201,168,255,0.2)",
-                  padding: "14px 16px",
-                  color: "#f0e8ff",
-                  fontFamily: "'Raleway', sans-serif",
-                  fontSize: 15,
-                  outline: "none",
-                  resize: "vertical",
-                  transition: "border-color 0.2s",
-                }}
-                onFocus={e => e.target.style.borderColor = "rgba(201,168,255,0.6)"}
-                onBlur={e => e.target.style.borderColor = "rgba(201,168,255,0.2)"}
-              />
-            </div>
-            <button
-              type="submit"
-              style={{
-                alignSelf: "flex-start",
-                fontFamily: "'Raleway', sans-serif",
-                fontSize: 12,
-                fontWeight: 700,
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                padding: "14px 48px",
-                background: "#c9a8ff",
-                color: "#1a1228",
-                border: "none",
-                cursor: "pointer",
-                transition: "background 0.2s",
-              }}
-              onMouseOver={e => e.target.style.background = "#dfc4ff"}
-              onMouseOut={e => e.target.style.background = "#c9a8ff"}
-            >
-              Send Message
-            </button>
-            <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, color: "rgba(240,232,255,0.35)", lineHeight: 1.6 }}>
-              Note: To make this form functional, connect it to a service like <a href="https://formspree.io" target="_blank" rel="noreferrer" style={{ color: "rgba(201,168,255,0.6)" }}>Formspree</a> or <a href="https://www.netlify.com/products/forms/" target="_blank" rel="noreferrer" style={{ color: "rgba(201,168,255,0.6)" }}>Netlify Forms</a>.
-            </p>
-          </form>
-        )}
-      </div>
-    </div>
-  );
-}
+//         {submitted ? (
+//           <div style={{
+//             background: "rgba(201,168,255,0.08)",
+//             border: "1px solid rgba(201,168,255,0.3)",
+//             padding: 40,
+//             textAlign: "center",
+//           }}>
+//             <p style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, color: "#f0e8ff", fontStyle: "italic", marginBottom: 12 }}>Message sent!</p>
+//             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 14, color: "rgba(240,232,255,0.6)" }}>Kristina will be in touch soon.</p>
+//           </div>
+//         ) : (
+//           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+//             {[
+//               { name: "name", label: "Name", type: "text" },
+//               { name: "email", label: "Email", type: "email" },
+//             ].map(({ name, label, type }) => (
+//               <div key={name} style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+//                 <label style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(240,232,255,0.5)" }}>{label}</label>
+//                 <input
+//                   type={type}
+//                   required
+//                   value={form[name]}
+//                   onChange={e => setForm({ ...form, [name]: e.target.value })}
+//                   style={{
+//                     background: "rgba(201,168,255,0.06)",
+//                     border: "1px solid rgba(201,168,255,0.2)",
+//                     padding: "14px 16px",
+//                     color: "#f0e8ff",
+//                     fontFamily: "'Raleway', sans-serif",
+//                     fontSize: 15,
+//                     outline: "none",
+//                     transition: "border-color 0.2s",
+//                   }}
+//                   onFocus={e => e.target.style.borderColor = "rgba(201,168,255,0.6)"}
+//                   onBlur={e => e.target.style.borderColor = "rgba(201,168,255,0.2)"}
+//                 />
+//               </div>
+//             ))}
+//             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+//               <label style={{ fontFamily: "'Raleway', sans-serif", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(240,232,255,0.5)" }}>Message</label>
+//               <textarea
+//                 required
+//                 rows={6}
+//                 value={form.message}
+//                 onChange={e => setForm({ ...form, message: e.target.value })}
+//                 style={{
+//                   background: "rgba(201,168,255,0.06)",
+//                   border: "1px solid rgba(201,168,255,0.2)",
+//                   padding: "14px 16px",
+//                   color: "#f0e8ff",
+//                   fontFamily: "'Raleway', sans-serif",
+//                   fontSize: 15,
+//                   outline: "none",
+//                   resize: "vertical",
+//                   transition: "border-color 0.2s",
+//                 }}
+//                 onFocus={e => e.target.style.borderColor = "rgba(201,168,255,0.6)"}
+//                 onBlur={e => e.target.style.borderColor = "rgba(201,168,255,0.2)"}
+//               />
+//             </div>
+//             <button
+//               type="submit"
+//               style={{
+//                 alignSelf: "flex-start",
+//                 fontFamily: "'Raleway', sans-serif",
+//                 fontSize: 12,
+//                 fontWeight: 700,
+//                 letterSpacing: "0.2em",
+//                 textTransform: "uppercase",
+//                 padding: "14px 48px",
+//                 background: "#c9a8ff",
+//                 color: "#1a1228",
+//                 border: "none",
+//                 cursor: "pointer",
+//                 transition: "background 0.2s",
+//               }}
+//               onMouseOver={e => e.target.style.background = "#dfc4ff"}
+//               onMouseOut={e => e.target.style.background = "#c9a8ff"}
+//             >
+//               Send Message
+//             </button>
+//             <p style={{ fontFamily: "'Raleway', sans-serif", fontSize: 12, color: "rgba(240,232,255,0.35)", lineHeight: 1.6 }}>
+//               Note: To make this form functional, connect it to a service like <a href="https://formspree.io" target="_blank" rel="noreferrer" style={{ color: "rgba(201,168,255,0.6)" }}>Formspree</a> or <a href="https://www.netlify.com/products/forms/" target="_blank" rel="noreferrer" style={{ color: "rgba(201,168,255,0.6)" }}>Netlify Forms</a>.
+//             </p>
+//           </form>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
 
 function Footer({ setPage }) {
   return (
@@ -639,7 +639,7 @@ export default function App() {
     About: <AboutPage />,
     "Sound Healing": <SoundHealingPage />,
     Shows: <ShowsPage />,
-    Connect: <ConnectPage />,
+    // Connect: <ConnectPage />,
   };
 
   return (
