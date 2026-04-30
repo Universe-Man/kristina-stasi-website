@@ -420,7 +420,7 @@ function ShowsPage() {
      type: "Village Voices Chorale",
      venue: "Bank of America Performing Arts Center",
      description: "Sing Sing Sing",
-     link: null,
+     link: "/images/music-takes-flight-2026-flyer.jpg",
    },
   ];
 
